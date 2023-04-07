@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     background: #161a1f;
@@ -133,6 +134,66 @@ body {
         }
         &-left {
             gap: 32px;
+            position: relative;
+            .menu {
+                &-wrapper {
+                    display: none;
+                    &.open {
+                        left: 0;
+                        transition: var(--transition);
+                    }
+                    position: absolute;
+                    z-index: 1;
+                    top: 38px;
+                    left: -700px;
+                    width: 100%;
+                    height: auto;
+                    background: #090d14;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    transition: var(--transition);
+                    .footer {
+                        &-bottom {
+                            background: #090d14;
+                            flex: 1;
+                            margin-top: 110px;
+                        }
+                    }
+                    .nav {
+                        &-list {
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            gap: 16px;
+                            padding-top: 12px;
+                            li {
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                                width: 100%;
+                                padding-bottom: 16px;
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+                                a {
+                                    padding-left: 18px;
+                                    opacity: 1;
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 6px;
+                                        height: 6px;
+                                        background: var(--main-color);
+                                        border-radius: 100%;
+                                        top: 7px;
+                                        left: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .call span {
             color: #ff3e2d;

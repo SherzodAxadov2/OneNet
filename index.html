@@ -55,8 +55,35 @@
         <nav class="nav">
             <div class="container flex items-center">
                 <div class="nav-left">
-                    <div class="menu">
+                    <div class="menu-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#contact" onclick="showMenu()" class="nav-list-item text-base fw-600">О
+                                    компании</a>
+                            </li>
+                            <li>
+                                <a href="#tarif" onclick="showMenu()" class="nav-list-item text-base fw-600">Тарифы</a>
+                            </li>
+                            <li>
+                                <a href="#news" onclick="showMenu()" class="nav-list-item text-base fw-600">Обратная
+                                    связь</a>
+                            </li>
+                            <li>
+                                <a href="#partners" onclick="showMenu()"
+                                    class="nav-list-item text-base fw-600">Партнерам</a>
+                            </li>
+                        </ul>
+                        <div class="footer-bottom">
+                            <div class="container">
+                                <p class="text-base fw-600">© One Net LLC. All rights reserved.</p>
+                                <a href="https://uic.group/" class="logo"><img src="images/logo-uic.png" alt="logo"></a>
+                                <p class="text-base fw-500">Правила пользования</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu" onclick="showMenu()">
                         <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-xmark"></i>
                     </div>
                     <div class="logo">
                         <a href="https://one-net.uz/" target="_blank">
@@ -476,8 +503,7 @@
                     <div>
                         <label for="textarea">Введите текст</label>
                         <div class="textarea">
-                            <textarea name="textarea">Введите текст заявки
-                            </textarea>
+                            <textarea name="textarea" placeholder="Введите текст заявки"></textarea>
                             <span>0/500</span>
                         </div>
                     </div>
@@ -707,6 +733,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
