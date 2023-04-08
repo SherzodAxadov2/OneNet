@@ -269,6 +269,16 @@
             }
         }
     }
+
+    .menu {
+        &-wrapper {
+            .footer {
+                &-bottom {
+                    margin-top: 145px !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {

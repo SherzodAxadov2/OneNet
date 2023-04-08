@@ -210,6 +210,9 @@
   .footer-bottom .container a {
     order: -1;
   }
+  .menu-wrapper .footer-bottom {
+    margin-top: 145px !important;
+  }
 }
 @media (max-width: 576px) {
   .partner {
